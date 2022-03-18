@@ -24,7 +24,7 @@ pub enum SchemaGetError {
 
 
 /// Get database schema
-pub async fn schema_get(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::InlineResponse20038>, Error<SchemaGetError>> {
+pub async fn schema_get(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::SchemaResponse>, Error<SchemaGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

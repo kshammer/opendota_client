@@ -24,7 +24,7 @@ Method | HTTP request | Description
 
 ## players_account_id_counts_get
 
-> crate::models::InlineResponse20010 players_account_id_counts_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
+> crate::models::PlayerCountsResponse players_account_id_counts_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
 GET /players/{account_id}/counts
 
 Counts in categories
@@ -56,7 +56,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse20010**](inline_response_200_10.md)
+[**crate::models::PlayerCountsResponse**](PlayerCountsResponse.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 
 ## players_account_id_get
 
-> crate::models::InlineResponse2002 players_account_id_get(account_id)
+> crate::models::PlayerResponse players_account_id_get(account_id)
 GET /players/{account_id}
 
 Player data
@@ -86,7 +86,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse2002**](inline_response_200_2.md)
+[**crate::models::PlayerResponse**](PlayerResponse.md)
 
 ### Authorization
 
@@ -102,7 +102,7 @@ No authorization required
 
 ## players_account_id_heroes_get
 
-> Vec<crate::models::InlineResponse2006> players_account_id_heroes_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
+> Vec<crate::models::PlayerHeroesResponse> players_account_id_heroes_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
 GET /players/{account_id}/heroes
 
 Heroes played
@@ -134,7 +134,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse2006>**](inline_response_200_6.md)
+[**Vec<crate::models::PlayerHeroesResponse>**](PlayerHeroesResponse.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ No authorization required
 
 ## players_account_id_matches_get
 
-> Vec<crate::models::InlineResponse2005> players_account_id_matches_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort, project)
+> Vec<crate::models::PlayerMatchesResponse> players_account_id_matches_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort, project)
 GET /players/{account_id}/matches
 
 Matches played
@@ -232,7 +232,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse2005>**](inline_response_200_5.md)
+[**Vec<crate::models::PlayerMatchesResponse>**](PlayerMatchesResponse.md)
 
 ### Authorization
 
@@ -248,7 +248,7 @@ No authorization required
 
 ## players_account_id_peers_get
 
-> Vec<crate::models::InlineResponse2007> players_account_id_peers_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
+> Vec<crate::models::PlayerPeersResponse> players_account_id_peers_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
 GET /players/{account_id}/peers
 
 Players played with
@@ -280,7 +280,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse2007>**](inline_response_200_7.md)
+[**Vec<crate::models::PlayerPeersResponse>**](PlayerPeersResponse.md)
 
 ### Authorization
 
@@ -296,7 +296,7 @@ No authorization required
 
 ## players_account_id_pros_get
 
-> Vec<crate::models::InlineResponse2008> players_account_id_pros_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
+> Vec<crate::models::PlayerProsResponse> players_account_id_pros_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
 GET /players/{account_id}/pros
 
 Pro players played with
@@ -328,7 +328,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse2008>**](inline_response_200_8.md)
+[**Vec<crate::models::PlayerProsResponse>**](PlayerProsResponse.md)
 
 ### Authorization
 
@@ -344,7 +344,7 @@ No authorization required
 
 ## players_account_id_rankings_get
 
-> Vec<crate::models::InlineResponse20014> players_account_id_rankings_get(account_id)
+> Vec<crate::models::PlayerHeroRankingsResponse> players_account_id_rankings_get(account_id)
 GET /players/{account_id}/rankings
 
 Player hero rankings
@@ -358,7 +358,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20014>**](inline_response_200_14.md)
+[**Vec<crate::models::PlayerHeroRankingsResponse>**](PlayerHeroRankingsResponse.md)
 
 ### Authorization
 
@@ -374,7 +374,7 @@ No authorization required
 
 ## players_account_id_ratings_get
 
-> Vec<crate::models::InlineResponse20013> players_account_id_ratings_get(account_id)
+> Vec<crate::models::PlayerRatingsResponse> players_account_id_ratings_get(account_id)
 GET /players/{account_id}/ratings
 
 Player rating history
@@ -388,7 +388,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20013>**](inline_response_200_13.md)
+[**Vec<crate::models::PlayerRatingsResponse>**](PlayerRatingsResponse.md)
 
 ### Authorization
 
@@ -404,7 +404,7 @@ No authorization required
 
 ## players_account_id_recent_matches_get
 
-> Vec<crate::models::InlineResponse2004> players_account_id_recent_matches_get(account_id)
+> Vec<crate::models::PlayerRecentMatchesResponse> players_account_id_recent_matches_get(account_id)
 GET /players/{account_id}/recentMatches
 
 Recent matches played
@@ -418,7 +418,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse2004>**](inline_response_200_4.md)
+[**Vec<crate::models::PlayerRecentMatchesResponse>**](PlayerRecentMatchesResponse.md)
 
 ### Authorization
 
@@ -464,7 +464,7 @@ No authorization required
 
 ## players_account_id_totals_get
 
-> Vec<crate::models::InlineResponse2009> players_account_id_totals_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
+> Vec<crate::models::PlayerStatsResponse> players_account_id_totals_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
 GET /players/{account_id}/totals
 
 Totals in stats
@@ -496,7 +496,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse2009>**](inline_response_200_9.md)
+[**Vec<crate::models::PlayerStatsResponse>**](PlayerStatsResponse.md)
 
 ### Authorization
 
@@ -512,7 +512,7 @@ No authorization required
 
 ## players_account_id_wardmap_get
 
-> crate::models::InlineResponse20011 players_account_id_wardmap_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
+> crate::models::PlayerWardMapResponse players_account_id_wardmap_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
 GET /players/{account_id}/wardmap
 
 Wards placed in matches played
@@ -544,7 +544,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse20011**](inline_response_200_11.md)
+[**crate::models::PlayerWardMapResponse**](PlayerWardMapResponse.md)
 
 ### Authorization
 
@@ -560,7 +560,7 @@ No authorization required
 
 ## players_account_id_wl_get
 
-> crate::models::InlineResponse2003 players_account_id_wl_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
+> crate::models::PlayerWinLossResponse players_account_id_wl_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
 GET /players/{account_id}/wl
 
 Win/Loss count
@@ -592,7 +592,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse2003**](inline_response_200_3.md)
+[**crate::models::PlayerWinLossResponse**](PlayerWinLossResponse.md)
 
 ### Authorization
 
@@ -608,7 +608,7 @@ No authorization required
 
 ## players_account_id_wordcloud_get
 
-> crate::models::InlineResponse20012 players_account_id_wordcloud_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
+> crate::models::PlayerWordCloudResponse players_account_id_wordcloud_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
 GET /players/{account_id}/wordcloud
 
 Words said/read in matches played
@@ -640,7 +640,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse20012**](inline_response_200_12.md)
+[**crate::models::PlayerWordCloudResponse**](PlayerWordCloudResponse.md)
 
 ### Authorization
 

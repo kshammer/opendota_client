@@ -45,7 +45,7 @@ pub enum LeaguesLeagueIdTeamsGetError {
 
 
 /// Get league data
-pub async fn leagues_get(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::InlineResponse20029>, Error<LeaguesGetError>> {
+pub async fn leagues_get(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::LeaguesResponse>, Error<LeaguesGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -73,7 +73,7 @@ pub async fn leagues_get(configuration: &configuration::Configuration, ) -> Resu
 }
 
 /// Get data for a league
-pub async fn leagues_league_id_get(configuration: &configuration::Configuration, league_id: i32) -> Result<Vec<crate::models::InlineResponse20029>, Error<LeaguesLeagueIdGetError>> {
+pub async fn leagues_league_id_get(configuration: &configuration::Configuration, league_id: i32) -> Result<Vec<crate::models::LeagueIdResponse>, Error<LeaguesLeagueIdGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -101,7 +101,7 @@ pub async fn leagues_league_id_get(configuration: &configuration::Configuration,
 }
 
 /// Get matches for a team
-pub async fn leagues_league_id_matches_get(configuration: &configuration::Configuration, league_id: i32) -> Result<crate::models::InlineResponse20016, Error<LeaguesLeagueIdMatchesGetError>> {
+pub async fn leagues_league_id_matches_get(configuration: &configuration::Configuration, league_id: i32) -> Result<crate::models::LeagueMatchesResponse, Error<LeaguesLeagueIdMatchesGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -129,7 +129,7 @@ pub async fn leagues_league_id_matches_get(configuration: &configuration::Config
 }
 
 /// Get teams for a league
-pub async fn leagues_league_id_teams_get(configuration: &configuration::Configuration, league_id: i32) -> Result<crate::models::InlineResponse20030, Error<LeaguesLeagueIdTeamsGetError>> {
+pub async fn leagues_league_id_teams_get(configuration: &configuration::Configuration, league_id: i32) -> Result<crate::models::LeagueTeamsResponse, Error<LeaguesLeagueIdTeamsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

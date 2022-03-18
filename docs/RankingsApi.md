@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## rankings_get
 
-> crate::models::InlineResponse20022 rankings_get(hero_id)
+> crate::models::RankingsResponse rankings_get(hero_id)
 GET /rankings
 
 Top players by hero
@@ -24,7 +24,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse20022**](inline_response_200_22.md)
+[**crate::models::RankingsResponse**](RankingsResponse.md)
 
 ### Authorization
 

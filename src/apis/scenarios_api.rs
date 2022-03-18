@@ -38,7 +38,7 @@ pub enum ScenariosMiscGetError {
 
 
 /// Win rates for certain item timings on a hero for items that cost at least 1400 gold
-pub async fn scenarios_item_timings_get(configuration: &configuration::Configuration, item: Option<&str>, hero_id: Option<i32>) -> Result<Vec<crate::models::InlineResponse20035>, Error<ScenariosItemTimingsGetError>> {
+pub async fn scenarios_item_timings_get(configuration: &configuration::Configuration, item: Option<&str>, hero_id: Option<i32>) -> Result<Vec<crate::models::ItemTimingsResponse>, Error<ScenariosItemTimingsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -72,7 +72,7 @@ pub async fn scenarios_item_timings_get(configuration: &configuration::Configura
 }
 
 /// Win rates for heroes in certain lane roles
-pub async fn scenarios_lane_roles_get(configuration: &configuration::Configuration, lane_role: Option<&str>, hero_id: Option<i32>) -> Result<Vec<crate::models::InlineResponse20036>, Error<ScenariosLaneRolesGetError>> {
+pub async fn scenarios_lane_roles_get(configuration: &configuration::Configuration, lane_role: Option<&str>, hero_id: Option<i32>) -> Result<Vec<crate::models::LaneRolesResponse>, Error<ScenariosLaneRolesGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -106,7 +106,7 @@ pub async fn scenarios_lane_roles_get(configuration: &configuration::Configurati
 }
 
 /// Miscellaneous team scenarios
-pub async fn scenarios_misc_get(configuration: &configuration::Configuration, scenario: Option<&str>) -> Result<Vec<crate::models::InlineResponse20037>, Error<ScenariosMiscGetError>> {
+pub async fn scenarios_misc_get(configuration: &configuration::Configuration, scenario: Option<&str>) -> Result<Vec<crate::models::MiscResponse>, Error<ScenariosMiscGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

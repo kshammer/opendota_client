@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## pro_players_get
 
-> Vec<crate::models::InlineResponse20015> pro_players_get()
+> Vec<crate::models::ProPlayerResponse> pro_players_get()
 GET /proPlayers
 
 Get list of pro players
@@ -21,7 +21,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20015>**](inline_response_200_15.md)
+[**Vec<crate::models::ProPlayerResponse>**](ProPlayerResponse.md)
 
 ### Authorization
 

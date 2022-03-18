@@ -59,7 +59,7 @@ pub enum HeroesHeroIdPlayersGetError {
 
 
 /// Get hero data
-pub async fn heroes_get(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::InlineResponse20024>, Error<HeroesGetError>> {
+pub async fn heroes_get(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::HeroesResponse>, Error<HeroesGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -87,7 +87,7 @@ pub async fn heroes_get(configuration: &configuration::Configuration, ) -> Resul
 }
 
 /// Get hero performance over a range of match durations
-pub async fn heroes_hero_id_durations_get(configuration: &configuration::Configuration, hero_id: i32) -> Result<Vec<crate::models::InlineResponse20027>, Error<HeroesHeroIdDurationsGetError>> {
+pub async fn heroes_hero_id_durations_get(configuration: &configuration::Configuration, hero_id: i32) -> Result<Vec<crate::models::HeroDurationsResponse>, Error<HeroesHeroIdDurationsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -115,7 +115,7 @@ pub async fn heroes_hero_id_durations_get(configuration: &configuration::Configu
 }
 
 /// Get item popularity of hero categoried by start, early, mid and late game, analyzed from professional games
-pub async fn heroes_hero_id_item_popularity_get(configuration: &configuration::Configuration, hero_id: i32) -> Result<crate::models::InlineResponse20028, Error<HeroesHeroIdItemPopularityGetError>> {
+pub async fn heroes_hero_id_item_popularity_get(configuration: &configuration::Configuration, hero_id: i32) -> Result<crate::models::HeroItemPopularityResponse, Error<HeroesHeroIdItemPopularityGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -143,7 +143,7 @@ pub async fn heroes_hero_id_item_popularity_get(configuration: &configuration::C
 }
 
 /// Get recent matches with a hero
-pub async fn heroes_hero_id_matches_get(configuration: &configuration::Configuration, hero_id: i32) -> Result<Vec<crate::models::InlineResponse20016>, Error<HeroesHeroIdMatchesGetError>> {
+pub async fn heroes_hero_id_matches_get(configuration: &configuration::Configuration, hero_id: i32) -> Result<Vec<crate::models::HeroMatchesResponse>, Error<HeroesHeroIdMatchesGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -171,7 +171,7 @@ pub async fn heroes_hero_id_matches_get(configuration: &configuration::Configura
 }
 
 /// Get results against other heroes for a hero
-pub async fn heroes_hero_id_matchups_get(configuration: &configuration::Configuration, hero_id: i32) -> Result<Vec<crate::models::InlineResponse20026>, Error<HeroesHeroIdMatchupsGetError>> {
+pub async fn heroes_hero_id_matchups_get(configuration: &configuration::Configuration, hero_id: i32) -> Result<Vec<crate::models::HeroMatchUpsResponse>, Error<HeroesHeroIdMatchupsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

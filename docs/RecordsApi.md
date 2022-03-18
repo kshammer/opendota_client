@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## records_field_get
 
-> Vec<crate::models::InlineResponse20034> records_field_get(field)
+> Vec<crate::models::RecordsResponse> records_field_get(field)
 GET /records/{field}
 
 Get top performances in a stat
@@ -24,7 +24,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20034>**](inline_response_200_34.md)
+[**Vec<crate::models::RecordsResponse>**](RecordsResponse.md)
 
 ### Authorization
 

@@ -24,7 +24,7 @@ pub enum ReplaysGetError {
 
 
 /// Get data to construct a replay URL with
-pub async fn replays_get(configuration: &configuration::Configuration, match_id: i32) -> Result<Vec<crate::models::InlineResponse20033>, Error<ReplaysGetError>> {
+pub async fn replays_get(configuration: &configuration::Configuration, match_id: i32) -> Result<Vec<crate::models::ReplaysResponse>, Error<ReplaysGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

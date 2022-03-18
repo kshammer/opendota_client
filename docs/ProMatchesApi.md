@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## pro_matches_get
 
-> Vec<crate::models::InlineResponse20016> pro_matches_get(less_than_match_id)
+> Vec<crate::models::ProMatchesResponse> pro_matches_get(less_than_match_id)
 GET /proMatches
 
 Get list of pro matches
@@ -24,7 +24,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20016>**](inline_response_200_16.md)
+[**Vec<crate::models::ProMatchesResponse>**](ProMatchesResponse.md)
 
 ### Authorization
 

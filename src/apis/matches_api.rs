@@ -24,7 +24,7 @@ pub enum MatchesMatchIdGetError {
 
 
 /// Match data
-pub async fn matches_match_id_get(configuration: &configuration::Configuration, match_id: i32) -> Result<crate::models::InlineResponse200, Error<MatchesMatchIdGetError>> {
+pub async fn matches_match_id_get(configuration: &configuration::Configuration, match_id: i32) -> Result<crate::models::MatchResponse, Error<MatchesMatchIdGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## metadata_get
 
-> crate::models::InlineResponse20019 metadata_get()
+> crate::models::MetadataResponse metadata_get()
 GET /metadata
 
 Site metadata
@@ -21,7 +21,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::InlineResponse20019**](inline_response_200_19.md)
+[**crate::models::MetadataResponse**](MetadataResponse.md)
 
 ### Authorization
 

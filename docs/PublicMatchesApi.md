@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## public_matches_get
 
-> Vec<crate::models::InlineResponse20017> public_matches_get(mmr_ascending, mmr_descending, less_than_match_id)
+> Vec<crate::models::PublicMatchesResponse> public_matches_get(mmr_ascending, mmr_descending, less_than_match_id)
 GET /publicMatches
 
 Get list of randomly sampled public matches
@@ -26,7 +26,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20017>**](inline_response_200_17.md)
+[**Vec<crate::models::PublicMatchesResponse>**](PublicMatchesResponse.md)
 
 ### Authorization
 

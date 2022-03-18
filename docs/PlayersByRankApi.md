@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## players_by_rank_get
 
-> crate::models::InlineResponse2001 players_by_rank_get()
+> crate::models::PlayersByRankResponse players_by_rank_get()
 GET /playersByRank
 
 Players ordered by rank/medal tier
@@ -21,7 +21,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::InlineResponse2001**](inline_response_200_1.md)
+[**crate::models::PlayersByRankResponse**](PlayersByRankResponse.md)
 
 ### Authorization
 

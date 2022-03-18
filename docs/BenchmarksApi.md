@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## benchmarks_get
 
-> crate::models::InlineResponse20023 benchmarks_get(hero_id)
+> crate::models::BenchmarksResponse benchmarks_get(hero_id)
 GET /benchmarks
 
 Benchmarks of average stat values for a hero
@@ -24,7 +24,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse20023**](inline_response_200_23.md)
+[**crate::models::BenchmarksResponse**](BenchmarksResponse.md)
 
 ### Authorization
 

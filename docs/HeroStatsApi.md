@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## hero_stats_get
 
-> Vec<crate::models::InlineResponse20025> hero_stats_get()
+> Vec<crate::models::HeroStatsResponse> hero_stats_get()
 GET /heroStats
 
 Get stats about hero performance in recent matches
@@ -21,7 +21,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20025>**](inline_response_200_25.md)
+[**Vec<crate::models::HeroStatsResponse>**](HeroStatsResponse.md)
 
 ### Authorization
 

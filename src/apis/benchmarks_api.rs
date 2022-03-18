@@ -24,7 +24,7 @@ pub enum BenchmarksGetError {
 
 
 /// Benchmarks of average stat values for a hero
-pub async fn benchmarks_get(configuration: &configuration::Configuration, hero_id: &str) -> Result<crate::models::InlineResponse20023, Error<BenchmarksGetError>> {
+pub async fn benchmarks_get(configuration: &configuration::Configuration, hero_id: &str) -> Result<crate::models::BenchmarksResponse, Error<BenchmarksGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

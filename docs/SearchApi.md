@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## search_get
 
-> Vec<crate::models::InlineResponse20021> search_get(q)
+> Vec<crate::models::SearchResponse> search_get(q)
 GET /search
 
 Search players by personaname.
@@ -24,7 +24,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20021>**](inline_response_200_21.md)
+[**Vec<crate::models::SearchResponse>**](SearchResponse.md)
 
 ### Authorization
 

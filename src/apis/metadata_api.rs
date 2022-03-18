@@ -24,7 +24,7 @@ pub enum MetadataGetError {
 
 
 /// Site metadata
-pub async fn metadata_get(configuration: &configuration::Configuration, ) -> Result<crate::models::InlineResponse20019, Error<MetadataGetError>> {
+pub async fn metadata_get(configuration: &configuration::Configuration, ) -> Result<crate::models::MetadataResponse, Error<MetadataGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

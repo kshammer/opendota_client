@@ -24,7 +24,7 @@ pub enum HeroStatsGetError {
 
 
 /// Get stats about hero performance in recent matches
-pub async fn hero_stats_get(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::InlineResponse20025>, Error<HeroStatsGetError>> {
+pub async fn hero_stats_get(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::HeroStatsResponse>, Error<HeroStatsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

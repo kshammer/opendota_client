@@ -52,7 +52,7 @@ pub enum TeamsTeamIdPlayersGetError {
 
 
 /// Get team data
-pub async fn teams_get(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::InlineResponse20030>, Error<TeamsGetError>> {
+pub async fn teams_get(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::TeamsResponse>, Error<TeamsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -80,7 +80,7 @@ pub async fn teams_get(configuration: &configuration::Configuration, ) -> Result
 }
 
 /// Get data for a team
-pub async fn teams_team_id_get(configuration: &configuration::Configuration, team_id: i32) -> Result<crate::models::InlineResponse20030, Error<TeamsTeamIdGetError>> {
+pub async fn teams_team_id_get(configuration: &configuration::Configuration, team_id: i32) -> Result<crate::models::TeamsIdResponse, Error<TeamsTeamIdGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -108,7 +108,7 @@ pub async fn teams_team_id_get(configuration: &configuration::Configuration, tea
 }
 
 /// Get heroes for a team
-pub async fn teams_team_id_heroes_get(configuration: &configuration::Configuration, team_id: i32) -> Result<crate::models::InlineResponse20032, Error<TeamsTeamIdHeroesGetError>> {
+pub async fn teams_team_id_heroes_get(configuration: &configuration::Configuration, team_id: i32) -> Result<crate::models::TeamHeroesResponse, Error<TeamsTeamIdHeroesGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -136,7 +136,7 @@ pub async fn teams_team_id_heroes_get(configuration: &configuration::Configurati
 }
 
 /// Get matches for a team
-pub async fn teams_team_id_matches_get(configuration: &configuration::Configuration, team_id: i32) -> Result<crate::models::InlineResponse20016, Error<TeamsTeamIdMatchesGetError>> {
+pub async fn teams_team_id_matches_get(configuration: &configuration::Configuration, team_id: i32) -> Result<crate::models::TeamsMatchesResponse, Error<TeamsTeamIdMatchesGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -164,7 +164,7 @@ pub async fn teams_team_id_matches_get(configuration: &configuration::Configurat
 }
 
 /// Get players who have played for a team
-pub async fn teams_team_id_players_get(configuration: &configuration::Configuration, team_id: i32) -> Result<crate::models::InlineResponse20031, Error<TeamsTeamIdPlayersGetError>> {
+pub async fn teams_team_id_players_get(configuration: &configuration::Configuration, team_id: i32) -> Result<crate::models::TeamPlayersResponse, Error<TeamsTeamIdPlayersGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

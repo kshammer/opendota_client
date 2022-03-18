@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## parsed_matches_get
 
-> Vec<crate::models::InlineResponse20018> parsed_matches_get(less_than_match_id)
+> Vec<crate::models::ParsedMatchesResponse> parsed_matches_get(less_than_match_id)
 GET /parsedMatches
 
 Get list of parsed match IDs
@@ -24,7 +24,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20018>**](inline_response_200_18.md)
+[**Vec<crate::models::ParsedMatchesResponse>**](ParsedMatchesResponse.md)
 
 ### Authorization
 

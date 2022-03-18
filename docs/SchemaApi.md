@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## schema_get
 
-> Vec<crate::models::InlineResponse20038> schema_get()
+> Vec<crate::models::SchemaResponse> schema_get()
 GET /schema
 
 Get database schema
@@ -21,7 +21,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20038>**](inline_response_200_38.md)
+[**Vec<crate::models::SchemaResponse>**](SchemaResponse.md)
 
 ### Authorization
 

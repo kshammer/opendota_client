@@ -24,7 +24,7 @@ pub enum SearchGetError {
 
 
 /// Search players by personaname.
-pub async fn search_get(configuration: &configuration::Configuration, q: &str) -> Result<Vec<crate::models::InlineResponse20021>, Error<SearchGetError>> {
+pub async fn search_get(configuration: &configuration::Configuration, q: &str) -> Result<Vec<crate::models::SearchResponse>, Error<SearchGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

@@ -24,7 +24,7 @@ pub enum DistributionsGetError {
 
 
 /// Distributions of MMR data by bracket and country
-pub async fn distributions_get(configuration: &configuration::Configuration, ) -> Result<crate::models::InlineResponse20020, Error<DistributionsGetError>> {
+pub async fn distributions_get(configuration: &configuration::Configuration, ) -> Result<crate::models::DistributionsResponse, Error<DistributionsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

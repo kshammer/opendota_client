@@ -24,7 +24,7 @@ pub enum ParsedMatchesGetError {
 
 
 /// Get list of parsed match IDs
-pub async fn parsed_matches_get(configuration: &configuration::Configuration, less_than_match_id: Option<i32>) -> Result<Vec<crate::models::InlineResponse20018>, Error<ParsedMatchesGetError>> {
+pub async fn parsed_matches_get(configuration: &configuration::Configuration, less_than_match_id: Option<i32>) -> Result<Vec<crate::models::ParsedMatchesResponse>, Error<ParsedMatchesGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

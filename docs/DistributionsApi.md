@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## distributions_get
 
-> crate::models::InlineResponse20020 distributions_get()
+> crate::models::DistributionsResponse distributions_get()
 GET /distributions
 
 Distributions of MMR data by bracket and country
@@ -21,7 +21,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::InlineResponse20020**](inline_response_200_20.md)
+[**crate::models::DistributionsResponse**](DistributionsResponse.md)
 
 ### Authorization
 

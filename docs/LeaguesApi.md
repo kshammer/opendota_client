@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 ## leagues_get
 
-> Vec<crate::models::InlineResponse20029> leagues_get()
+> Vec<crate::models::LeaguesResponse> leagues_get()
 GET /leagues
 
 Get league data
@@ -24,7 +24,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20029>**](inline_response_200_29.md)
+[**Vec<crate::models::LeaguesResponse>**](LeaguesResponse.md)
 
 ### Authorization
 
@@ -40,7 +40,7 @@ No authorization required
 
 ## leagues_league_id_get
 
-> Vec<crate::models::InlineResponse20029> leagues_league_id_get(league_id)
+> Vec<crate::models::LeagueIdResponse> leagues_league_id_get(league_id)
 GET /leagues/{league_id}
 
 Get data for a league
@@ -54,7 +54,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20029>**](inline_response_200_29.md)
+[**Vec<crate::models::LeagueIdResponse>**](LeagueIdResponse.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 
 ## leagues_league_id_matches_get
 
-> crate::models::InlineResponse20016 leagues_league_id_matches_get(league_id)
+> crate::models::LeagueMatchesResponse leagues_league_id_matches_get(league_id)
 GET /leagues/{league_id}/matches
 
 Get matches for a team
@@ -84,7 +84,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse20016**](inline_response_200_16.md)
+[**crate::models::LeagueMatchesResponse**](LeagueMatchesResponse.md)
 
 ### Authorization
 
@@ -100,7 +100,7 @@ No authorization required
 
 ## leagues_league_id_teams_get
 
-> crate::models::InlineResponse20030 leagues_league_id_teams_get(league_id)
+> crate::models::LeagueTeamsResponse leagues_league_id_teams_get(league_id)
 GET /leagues/{league_id}/teams
 
 Get teams for a league
@@ -114,7 +114,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse20030**](inline_response_200_30.md)
+[**crate::models::LeagueTeamsResponse**](LeagueTeamsResponse.md)
 
 ### Authorization
 

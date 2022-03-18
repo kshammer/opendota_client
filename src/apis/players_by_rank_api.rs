@@ -24,7 +24,7 @@ pub enum PlayersByRankGetError {
 
 
 /// Players ordered by rank/medal tier
-pub async fn players_by_rank_get(configuration: &configuration::Configuration, ) -> Result<crate::models::InlineResponse2001, Error<PlayersByRankGetError>> {
+pub async fn players_by_rank_get(configuration: &configuration::Configuration, ) -> Result<crate::models::PlayersByRankResponse, Error<PlayersByRankGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

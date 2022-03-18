@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 ## scenarios_item_timings_get
 
-> Vec<crate::models::InlineResponse20035> scenarios_item_timings_get(item, hero_id)
+> Vec<crate::models::ItemTimingsResponse> scenarios_item_timings_get(item, hero_id)
 GET /scenarios/itemTimings
 
 Win rates for certain item timings on a hero for items that cost at least 1400 gold
@@ -27,7 +27,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20035>**](inline_response_200_35.md)
+[**Vec<crate::models::ItemTimingsResponse>**](ItemTimingsResponse.md)
 
 ### Authorization
 
@@ -43,7 +43,7 @@ No authorization required
 
 ## scenarios_lane_roles_get
 
-> Vec<crate::models::InlineResponse20036> scenarios_lane_roles_get(lane_role, hero_id)
+> Vec<crate::models::LaneRolesResponse> scenarios_lane_roles_get(lane_role, hero_id)
 GET /scenarios/laneRoles
 
 Win rates for heroes in certain lane roles
@@ -58,7 +58,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20036>**](inline_response_200_36.md)
+[**Vec<crate::models::LaneRolesResponse>**](LaneRolesResponse.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ No authorization required
 
 ## scenarios_misc_get
 
-> Vec<crate::models::InlineResponse20037> scenarios_misc_get(scenario)
+> Vec<crate::models::MiscResponse> scenarios_misc_get(scenario)
 GET /scenarios/misc
 
 Miscellaneous team scenarios
@@ -88,7 +88,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20037>**](inline_response_200_37.md)
+[**Vec<crate::models::MiscResponse>**](MiscResponse.md)
 
 ### Authorization
 

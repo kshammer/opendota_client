@@ -122,7 +122,7 @@ pub enum PlayersAccountIdWordcloudGetError {
 
 
 /// Counts in categories
-pub async fn players_account_id_counts_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<crate::models::InlineResponse20010, Error<PlayersAccountIdCountsGetError>> {
+pub async fn players_account_id_counts_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<crate::models::PlayerCountsResponse, Error<PlayersAccountIdCountsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -204,7 +204,7 @@ pub async fn players_account_id_counts_get(configuration: &configuration::Config
 }
 
 /// Player data
-pub async fn players_account_id_get(configuration: &configuration::Configuration, account_id: i32) -> Result<crate::models::InlineResponse2002, Error<PlayersAccountIdGetError>> {
+pub async fn players_account_id_get(configuration: &configuration::Configuration, account_id: i32) -> Result<crate::models::PlayerResponse, Error<PlayersAccountIdGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -232,7 +232,7 @@ pub async fn players_account_id_get(configuration: &configuration::Configuration
 }
 
 /// Heroes played
-pub async fn players_account_id_heroes_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<Vec<crate::models::InlineResponse2006>, Error<PlayersAccountIdHeroesGetError>> {
+pub async fn players_account_id_heroes_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<Vec<crate::models::PlayerHeroesResponse>, Error<PlayersAccountIdHeroesGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -396,7 +396,7 @@ pub async fn players_account_id_histograms_field_get(configuration: &configurati
 }
 
 /// Matches played
-pub async fn players_account_id_matches_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>, project: Option<&str>) -> Result<Vec<crate::models::InlineResponse2005>, Error<PlayersAccountIdMatchesGetError>> {
+pub async fn players_account_id_matches_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>, project: Option<&str>) -> Result<Vec<crate::models::PlayerMatchesResponse>, Error<PlayersAccountIdMatchesGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -481,7 +481,7 @@ pub async fn players_account_id_matches_get(configuration: &configuration::Confi
 }
 
 /// Players played with
-pub async fn players_account_id_peers_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<Vec<crate::models::InlineResponse2007>, Error<PlayersAccountIdPeersGetError>> {
+pub async fn players_account_id_peers_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<Vec<crate::models::PlayerPeersResponse>, Error<PlayersAccountIdPeersGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -563,7 +563,7 @@ pub async fn players_account_id_peers_get(configuration: &configuration::Configu
 }
 
 /// Pro players played with
-pub async fn players_account_id_pros_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<Vec<crate::models::InlineResponse2008>, Error<PlayersAccountIdProsGetError>> {
+pub async fn players_account_id_pros_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<Vec<crate::models::PlayerProsResponse>, Error<PlayersAccountIdProsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -645,7 +645,7 @@ pub async fn players_account_id_pros_get(configuration: &configuration::Configur
 }
 
 /// Player hero rankings
-pub async fn players_account_id_rankings_get(configuration: &configuration::Configuration, account_id: i32) -> Result<Vec<crate::models::InlineResponse20014>, Error<PlayersAccountIdRankingsGetError>> {
+pub async fn players_account_id_rankings_get(configuration: &configuration::Configuration, account_id: i32) -> Result<Vec<crate::models::PlayerHeroRankingsResponse>, Error<PlayersAccountIdRankingsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -673,7 +673,7 @@ pub async fn players_account_id_rankings_get(configuration: &configuration::Conf
 }
 
 /// Player rating history
-pub async fn players_account_id_ratings_get(configuration: &configuration::Configuration, account_id: i32) -> Result<Vec<crate::models::InlineResponse20013>, Error<PlayersAccountIdRatingsGetError>> {
+pub async fn players_account_id_ratings_get(configuration: &configuration::Configuration, account_id: i32) -> Result<Vec<crate::models::PlayerRatingsResponse>, Error<PlayersAccountIdRatingsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -701,7 +701,7 @@ pub async fn players_account_id_ratings_get(configuration: &configuration::Confi
 }
 
 /// Recent matches played
-pub async fn players_account_id_recent_matches_get(configuration: &configuration::Configuration, account_id: i32) -> Result<Vec<crate::models::InlineResponse2004>, Error<PlayersAccountIdRecentMatchesGetError>> {
+pub async fn players_account_id_recent_matches_get(configuration: &configuration::Configuration, account_id: i32) -> Result<Vec<crate::models::PlayerRecentMatchesResponse>, Error<PlayersAccountIdRecentMatchesGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -757,7 +757,7 @@ pub async fn players_account_id_refresh_post(configuration: &configuration::Conf
 }
 
 /// Totals in stats
-pub async fn players_account_id_totals_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<Vec<crate::models::InlineResponse2009>, Error<PlayersAccountIdTotalsGetError>> {
+pub async fn players_account_id_totals_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<Vec<crate::models::PlayerStatsResponse>, Error<PlayersAccountIdTotalsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -839,7 +839,7 @@ pub async fn players_account_id_totals_get(configuration: &configuration::Config
 }
 
 /// Wards placed in matches played
-pub async fn players_account_id_wardmap_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<crate::models::InlineResponse20011, Error<PlayersAccountIdWardmapGetError>> {
+pub async fn players_account_id_wardmap_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<crate::models::PlayerWardMapResponse, Error<PlayersAccountIdWardmapGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -921,7 +921,7 @@ pub async fn players_account_id_wardmap_get(configuration: &configuration::Confi
 }
 
 /// Win/Loss count
-pub async fn players_account_id_wl_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<crate::models::InlineResponse2003, Error<PlayersAccountIdWlGetError>> {
+pub async fn players_account_id_wl_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<crate::models::PlayerWinLossResponse, Error<PlayersAccountIdWlGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -1003,7 +1003,7 @@ pub async fn players_account_id_wl_get(configuration: &configuration::Configurat
 }
 
 /// Words said/read in matches played
-pub async fn players_account_id_wordcloud_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<crate::models::InlineResponse20012, Error<PlayersAccountIdWordcloudGetError>> {
+pub async fn players_account_id_wordcloud_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<crate::models::PlayerWordCloudResponse, Error<PlayersAccountIdWordcloudGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

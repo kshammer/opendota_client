@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## replays_get
 
-> Vec<crate::models::InlineResponse20033> replays_get(match_id)
+> Vec<crate::models::ReplaysResponse> replays_get(match_id)
 GET /replays
 
 Get data to construct a replay URL with
@@ -24,7 +24,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20033>**](inline_response_200_33.md)
+[**Vec<crate::models::ReplaysResponse>**](ReplaysResponse.md)
 
 ### Authorization
 

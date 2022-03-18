@@ -24,7 +24,7 @@ pub enum RecordsFieldGetError {
 
 
 /// Get top performances in a stat
-pub async fn records_field_get(configuration: &configuration::Configuration, field: &str) -> Result<Vec<crate::models::InlineResponse20034>, Error<RecordsFieldGetError>> {
+pub async fn records_field_get(configuration: &configuration::Configuration, field: &str) -> Result<Vec<crate::models::RecordsResponse>, Error<RecordsFieldGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

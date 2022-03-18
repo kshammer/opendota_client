@@ -24,7 +24,7 @@ pub enum RankingsGetError {
 
 
 /// Top players by hero
-pub async fn rankings_get(configuration: &configuration::Configuration, hero_id: &str) -> Result<crate::models::InlineResponse20022, Error<RankingsGetError>> {
+pub async fn rankings_get(configuration: &configuration::Configuration, hero_id: &str) -> Result<crate::models::RankingsResponse, Error<RankingsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

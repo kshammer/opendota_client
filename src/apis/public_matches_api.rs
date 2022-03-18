@@ -24,7 +24,7 @@ pub enum PublicMatchesGetError {
 
 
 /// Get list of randomly sampled public matches
-pub async fn public_matches_get(configuration: &configuration::Configuration, mmr_ascending: Option<i32>, mmr_descending: Option<i32>, less_than_match_id: Option<i32>) -> Result<Vec<crate::models::InlineResponse20017>, Error<PublicMatchesGetError>> {
+pub async fn public_matches_get(configuration: &configuration::Configuration, mmr_ascending: Option<i32>, mmr_descending: Option<i32>, less_than_match_id: Option<i32>) -> Result<Vec<crate::models::PublicMatchesResponse>, Error<PublicMatchesGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

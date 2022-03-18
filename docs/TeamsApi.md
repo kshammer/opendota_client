@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## teams_get
 
-> Vec<crate::models::InlineResponse20030> teams_get()
+> Vec<crate::models::TeamsResponse> teams_get()
 GET /teams
 
 Get team data
@@ -25,7 +25,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::InlineResponse20030>**](inline_response_200_30.md)
+[**Vec<crate::models::TeamsResponse>**](TeamsResponse.md)
 
 ### Authorization
 
@@ -41,7 +41,7 @@ No authorization required
 
 ## teams_team_id_get
 
-> crate::models::InlineResponse20030 teams_team_id_get(team_id)
+> crate::models::TeamsIdResponse teams_team_id_get(team_id)
 GET /teams/{team_id}
 
 Get data for a team
@@ -55,7 +55,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse20030**](inline_response_200_30.md)
+[**crate::models::TeamsIdResponse**](TeamsIdResponse.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 
 ## teams_team_id_heroes_get
 
-> crate::models::InlineResponse20032 teams_team_id_heroes_get(team_id)
+> crate::models::TeamHeroesResponse teams_team_id_heroes_get(team_id)
 GET /teams/{team_id}/heroes
 
 Get heroes for a team
@@ -85,7 +85,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse20032**](inline_response_200_32.md)
+[**crate::models::TeamHeroesResponse**](TeamHeroesResponse.md)
 
 ### Authorization
 
@@ -101,7 +101,7 @@ No authorization required
 
 ## teams_team_id_matches_get
 
-> crate::models::InlineResponse20016 teams_team_id_matches_get(team_id)
+> crate::models::TeamsMatchesResponse teams_team_id_matches_get(team_id)
 GET /teams/{team_id}/matches
 
 Get matches for a team
@@ -115,7 +115,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse20016**](inline_response_200_16.md)
+[**crate::models::TeamsMatchesResponse**](TeamsMatchesResponse.md)
 
 ### Authorization
 
@@ -131,7 +131,7 @@ No authorization required
 
 ## teams_team_id_players_get
 
-> crate::models::InlineResponse20031 teams_team_id_players_get(team_id)
+> crate::models::TeamPlayersResponse teams_team_id_players_get(team_id)
 GET /teams/{team_id}/players
 
 Get players who have played for a team
@@ -145,7 +145,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse20031**](inline_response_200_31.md)
+[**crate::models::TeamPlayersResponse**](TeamPlayersResponse.md)
 
 ### Authorization
 

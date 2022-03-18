@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## matches_match_id_get
 
-> crate::models::InlineResponse200 matches_match_id_get(match_id)
+> crate::models::MatchResponse matches_match_id_get(match_id)
 GET /matches/{match_id}
 
 Match data
@@ -24,7 +24,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::InlineResponse200**](inline_response_200.md)
+[**crate::models::MatchResponse**](MatchResponse.md)
 
 ### Authorization
 
