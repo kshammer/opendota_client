@@ -1,8 +1,8 @@
 [package]
-name = "openapi"
-version = "18.0.0"
+name = "opendota_client"
+version = "0.1.0"
 authors = ["OpenAPI Generator team and contributors"]
-edition = "2018"
+edition = "2021"
 
 [dependencies]
 serde = "^1.0"
