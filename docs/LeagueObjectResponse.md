@@ -1,4 +1,4 @@
-# LeagueIdResponse
+# LeagueObjectResponse
 
 ## Properties
 

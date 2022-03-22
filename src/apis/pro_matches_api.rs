@@ -24,7 +24,7 @@ pub enum ProMatchesGetError {
 
 
 /// Get list of pro matches
-pub async fn pro_matches_get(configuration: &configuration::Configuration, less_than_match_id: Option<i32>) -> Result<Vec<crate::models::ProMatchesResponse>, Error<ProMatchesGetError>> {
+pub async fn pro_matches_get(configuration: &configuration::Configuration, less_than_match_id: Option<i32>) -> Result<Vec<crate::models::MatchObjectResponse>, Error<ProMatchesGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

@@ -1,4 +1,4 @@
-# MiscResponse
+# ScenarioMiscResponse
 
 ## Properties
 

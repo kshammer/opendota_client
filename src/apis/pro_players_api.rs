@@ -24,7 +24,7 @@ pub enum ProPlayersGetError {
 
 
 /// Get list of pro players
-pub async fn pro_players_get(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::ProPlayerResponse>, Error<ProPlayersGetError>> {
+pub async fn pro_players_get(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::PlayerObjectResponse>, Error<ProPlayersGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

@@ -12,7 +12,7 @@
 
 
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
-pub struct PlayerHeroRankingsResponse {
+pub struct PlayerRankingsResponse {
     /// The ID value of the hero played
     #[serde(rename = "hero_id", skip_serializing_if = "Option::is_none")]
     pub hero_id: Option<String>,
@@ -27,9 +27,9 @@ pub struct PlayerHeroRankingsResponse {
     pub card: Option<i32>,
 }
 
-impl PlayerHeroRankingsResponse {
-    pub fn new() -> PlayerHeroRankingsResponse {
-        PlayerHeroRankingsResponse {
+impl PlayerRankingsResponse {
+    pub fn new() -> PlayerRankingsResponse {
+        PlayerRankingsResponse {
             hero_id: None,
             score: None,
             percent_rank: None,

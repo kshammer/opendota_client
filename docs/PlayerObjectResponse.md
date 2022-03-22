@@ -1,4 +1,4 @@
-# ProPlayerResponse
+# PlayerObjectResponse
 
 ## Properties
 

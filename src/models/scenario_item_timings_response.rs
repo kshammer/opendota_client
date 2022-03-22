@@ -12,7 +12,7 @@
 
 
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
-pub struct ItemTimingsResponse {
+pub struct ScenarioItemTimingsResponse {
     /// Hero ID
     #[serde(rename = "hero_id", skip_serializing_if = "Option::is_none")]
     pub hero_id: Option<i32>,
@@ -30,9 +30,9 @@ pub struct ItemTimingsResponse {
     pub wins: Option<String>,
 }
 
-impl ItemTimingsResponse {
-    pub fn new() -> ItemTimingsResponse {
-        ItemTimingsResponse {
+impl ScenarioItemTimingsResponse {
+    pub fn new() -> ScenarioItemTimingsResponse {
+        ScenarioItemTimingsResponse {
             hero_id: None,
             item: None,
             time: None,

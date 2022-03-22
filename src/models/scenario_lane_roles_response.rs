@@ -12,23 +12,31 @@
 
 
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
-pub struct HeroMatchUpsResponse {
-    /// Numeric identifier for the hero object
+pub struct ScenarioLaneRolesResponse {
+    /// Hero ID
     #[serde(rename = "hero_id", skip_serializing_if = "Option::is_none")]
     pub hero_id: Option<i32>,
-    /// Number of games played
-    #[serde(rename = "games_played", skip_serializing_if = "Option::is_none")]
-    pub games_played: Option<i32>,
-    /// Number of games won
+    /// The hero's lane role
+    #[serde(rename = "lane_role", skip_serializing_if = "Option::is_none")]
+    pub lane_role: Option<i32>,
+    /// Maximum game length in seconds
+    #[serde(rename = "time", skip_serializing_if = "Option::is_none")]
+    pub time: Option<i32>,
+    /// The number of games where the hero played in this lane role
+    #[serde(rename = "games", skip_serializing_if = "Option::is_none")]
+    pub games: Option<String>,
+    /// The number of games won where the hero played in this lane role
     #[serde(rename = "wins", skip_serializing_if = "Option::is_none")]
-    pub wins: Option<i32>,
+    pub wins: Option<String>,
 }
 
-impl HeroMatchUpsResponse {
-    pub fn new() -> HeroMatchUpsResponse {
-        HeroMatchUpsResponse {
+impl ScenarioLaneRolesResponse {
+    pub fn new() -> ScenarioLaneRolesResponse {
+        ScenarioLaneRolesResponse {
             hero_id: None,
-            games_played: None,
+            lane_role: None,
+            time: None,
+            games: None,
             wins: None,
         }
     }

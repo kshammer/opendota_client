@@ -1,4 +1,4 @@
-# HeroesResponse
+# HeroObjectResponse
 
 ## Properties
 

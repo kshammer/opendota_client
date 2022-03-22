@@ -12,24 +12,24 @@
 
 
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
-pub struct PlayerStatsResponse {
-    /// field
-    #[serde(rename = "field", skip_serializing_if = "Option::is_none")]
-    pub field: Option<String>,
-    /// number
-    #[serde(rename = "n", skip_serializing_if = "Option::is_none")]
-    pub n: Option<i32>,
-    /// sum
-    #[serde(rename = "sum", skip_serializing_if = "Option::is_none")]
-    pub sum: Option<i32>,
+pub struct HeroMatchupsResponse {
+    /// Numeric identifier for the hero object
+    #[serde(rename = "hero_id", skip_serializing_if = "Option::is_none")]
+    pub hero_id: Option<i32>,
+    /// Number of games played
+    #[serde(rename = "games_played", skip_serializing_if = "Option::is_none")]
+    pub games_played: Option<i32>,
+    /// Number of games won
+    #[serde(rename = "wins", skip_serializing_if = "Option::is_none")]
+    pub wins: Option<i32>,
 }
 
-impl PlayerStatsResponse {
-    pub fn new() -> PlayerStatsResponse {
-        PlayerStatsResponse {
-            field: None,
-            n: None,
-            sum: None,
+impl HeroMatchupsResponse {
+    pub fn new() -> HeroMatchupsResponse {
+        HeroMatchupsResponse {
+            hero_id: None,
+            games_played: None,
+            wins: None,
         }
     }
 }

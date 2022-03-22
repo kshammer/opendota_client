@@ -12,7 +12,7 @@
 
 
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
-pub struct ProPlayerResponse {
+pub struct PlayerObjectResponse {
     /// Player's account identifier
     #[serde(rename = "account_id", skip_serializing_if = "Option::is_none")]
     pub account_id: Option<i32>,
@@ -78,9 +78,9 @@ pub struct ProPlayerResponse {
     pub locked_until: Option<i32>,
 }
 
-impl ProPlayerResponse {
-    pub fn new() -> ProPlayerResponse {
-        ProPlayerResponse {
+impl PlayerObjectResponse {
+    pub fn new() -> PlayerObjectResponse {
+        PlayerObjectResponse {
             account_id: None,
             steamid: None,
             avatar: None,

@@ -344,7 +344,7 @@ No authorization required
 
 ## players_account_id_rankings_get
 
-> Vec<crate::models::PlayerHeroRankingsResponse> players_account_id_rankings_get(account_id)
+> Vec<crate::models::PlayerRankingsResponse> players_account_id_rankings_get(account_id)
 GET /players/{account_id}/rankings
 
 Player hero rankings
@@ -358,7 +358,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::PlayerHeroRankingsResponse>**](PlayerHeroRankingsResponse.md)
+[**Vec<crate::models::PlayerRankingsResponse>**](PlayerRankingsResponse.md)
 
 ### Authorization
 
@@ -464,7 +464,7 @@ No authorization required
 
 ## players_account_id_totals_get
 
-> Vec<crate::models::PlayerStatsResponse> players_account_id_totals_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
+> Vec<crate::models::PlayerTotalsResponse> players_account_id_totals_get(account_id, limit, offset, win, patch, game_mode, lobby_type, region, date, lane_role, hero_id, is_radiant, included_account_id, excluded_account_id, with_hero_id, against_hero_id, significant, having, sort)
 GET /players/{account_id}/totals
 
 Totals in stats
@@ -496,7 +496,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::PlayerStatsResponse>**](PlayerStatsResponse.md)
+[**Vec<crate::models::PlayerTotalsResponse>**](PlayerTotalsResponse.md)
 
 ### Authorization
 

@@ -645,7 +645,7 @@ pub async fn players_account_id_pros_get(configuration: &configuration::Configur
 }
 
 /// Player hero rankings
-pub async fn players_account_id_rankings_get(configuration: &configuration::Configuration, account_id: i32) -> Result<Vec<crate::models::PlayerHeroRankingsResponse>, Error<PlayersAccountIdRankingsGetError>> {
+pub async fn players_account_id_rankings_get(configuration: &configuration::Configuration, account_id: i32) -> Result<Vec<crate::models::PlayerRankingsResponse>, Error<PlayersAccountIdRankingsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -757,7 +757,7 @@ pub async fn players_account_id_refresh_post(configuration: &configuration::Conf
 }
 
 /// Totals in stats
-pub async fn players_account_id_totals_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<Vec<crate::models::PlayerStatsResponse>, Error<PlayersAccountIdTotalsGetError>> {
+pub async fn players_account_id_totals_get(configuration: &configuration::Configuration, account_id: i32, limit: Option<i32>, offset: Option<i32>, win: Option<i32>, patch: Option<i32>, game_mode: Option<i32>, lobby_type: Option<i32>, region: Option<i32>, date: Option<i32>, lane_role: Option<i32>, hero_id: Option<i32>, is_radiant: Option<i32>, included_account_id: Option<i32>, excluded_account_id: Option<i32>, with_hero_id: Option<i32>, against_hero_id: Option<i32>, significant: Option<i32>, having: Option<i32>, sort: Option<&str>) -> Result<Vec<crate::models::PlayerTotalsResponse>, Error<PlayersAccountIdTotalsGetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

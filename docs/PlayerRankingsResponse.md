@@ -1,4 +1,4 @@
-# PlayerHeroRankingsResponse
+# PlayerRankingsResponse
 
 ## Properties
 

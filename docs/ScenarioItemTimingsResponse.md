@@ -1,4 +1,4 @@
-# ItemTimingsResponse
+# ScenarioItemTimingsResponse
 
 ## Properties
 

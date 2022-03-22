@@ -12,7 +12,7 @@
 
 
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
-pub struct LeaguesResponse {
+pub struct LeagueObjectResponse {
     /// leagueid
     #[serde(rename = "leagueid", skip_serializing_if = "Option::is_none")]
     pub leagueid: Option<i32>,
@@ -30,9 +30,9 @@ pub struct LeaguesResponse {
     pub name: Option<String>,
 }
 
-impl LeaguesResponse {
-    pub fn new() -> LeaguesResponse {
-        LeaguesResponse {
+impl LeagueObjectResponse {
+    pub fn new() -> LeagueObjectResponse {
+        LeagueObjectResponse {
             leagueid: None,
             ticket: None,
             banner: None,

@@ -12,7 +12,7 @@
 
 
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
-pub struct HeroesResponse {
+pub struct HeroObjectResponse {
     /// Numeric identifier for the hero object
     #[serde(rename = "id", skip_serializing_if = "Option::is_none")]
     pub id: Option<i32>,
@@ -32,9 +32,9 @@ pub struct HeroesResponse {
     pub roles: Option<Vec<String>>,
 }
 
-impl HeroesResponse {
-    pub fn new() -> HeroesResponse {
-        HeroesResponse {
+impl HeroObjectResponse {
+    pub fn new() -> HeroObjectResponse {
+        HeroObjectResponse {
             id: None,
             name: None,
             localized_name: None,

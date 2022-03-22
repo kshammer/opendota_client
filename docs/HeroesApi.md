@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 ## heroes_get
 
-> Vec<crate::models::HeroesResponse> heroes_get()
+> Vec<crate::models::HeroObjectResponse> heroes_get()
 GET /heroes
 
 Get hero data
@@ -26,7 +26,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::HeroesResponse>**](HeroesResponse.md)
+[**Vec<crate::models::HeroObjectResponse>**](HeroObjectResponse.md)
 
 ### Authorization
 
@@ -102,7 +102,7 @@ No authorization required
 
 ## heroes_hero_id_matches_get
 
-> Vec<crate::models::HeroMatchesResponse> heroes_hero_id_matches_get(hero_id)
+> Vec<crate::models::MatchObjectResponse> heroes_hero_id_matches_get(hero_id)
 GET /heroes/{hero_id}/matches
 
 Get recent matches with a hero
@@ -116,7 +116,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::HeroMatchesResponse>**](HeroMatchesResponse.md)
+[**Vec<crate::models::MatchObjectResponse>**](MatchObjectResponse.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ No authorization required
 
 ## heroes_hero_id_matchups_get
 
-> Vec<crate::models::HeroMatchUpsResponse> heroes_hero_id_matchups_get(hero_id)
+> Vec<crate::models::HeroMatchupsResponse> heroes_hero_id_matchups_get(hero_id)
 GET /heroes/{hero_id}/matchups
 
 Get results against other heroes for a hero
@@ -146,7 +146,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::HeroMatchUpsResponse>**](HeroMatchUpsResponse.md)
+[**Vec<crate::models::HeroMatchupsResponse>**](HeroMatchupsResponse.md)
 
 ### Authorization
 

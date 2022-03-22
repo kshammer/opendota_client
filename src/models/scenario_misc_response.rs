@@ -12,30 +12,30 @@
 
 
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
-pub struct LaneRolesResponse {
-    /// Hero ID
-    #[serde(rename = "hero_id", skip_serializing_if = "Option::is_none")]
-    pub hero_id: Option<i32>,
-    /// The hero's lane role
-    #[serde(rename = "lane_role", skip_serializing_if = "Option::is_none")]
-    pub lane_role: Option<i32>,
-    /// Maximum game length in seconds
-    #[serde(rename = "time", skip_serializing_if = "Option::is_none")]
-    pub time: Option<i32>,
-    /// The number of games where the hero played in this lane role
+pub struct ScenarioMiscResponse {
+    /// The scenario's name or description
+    #[serde(rename = "scenario", skip_serializing_if = "Option::is_none")]
+    pub scenario: Option<String>,
+    /// Boolean indicating whether Radiant executed this scenario
+    #[serde(rename = "is_radiant", skip_serializing_if = "Option::is_none")]
+    pub is_radiant: Option<bool>,
+    /// Region the game was played in
+    #[serde(rename = "region", skip_serializing_if = "Option::is_none")]
+    pub region: Option<i32>,
+    /// The number of games where this scenario occurred
     #[serde(rename = "games", skip_serializing_if = "Option::is_none")]
     pub games: Option<String>,
-    /// The number of games won where the hero played in this lane role
+    /// The number of games won where this scenario occured
     #[serde(rename = "wins", skip_serializing_if = "Option::is_none")]
     pub wins: Option<String>,
 }
 
-impl LaneRolesResponse {
-    pub fn new() -> LaneRolesResponse {
-        LaneRolesResponse {
-            hero_id: None,
-            lane_role: None,
-            time: None,
+impl ScenarioMiscResponse {
+    pub fn new() -> ScenarioMiscResponse {
+        ScenarioMiscResponse {
+            scenario: None,
+            is_radiant: None,
+            region: None,
             games: None,
             wins: None,
         }

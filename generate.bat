@@ -1,0 +1,1 @@
+openapi-generator-cli generate -i https://api.opendota.com/api -g rust -o . -c config.json

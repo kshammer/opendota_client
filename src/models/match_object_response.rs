@@ -12,7 +12,7 @@
 
 
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
-pub struct TeamsMatchesResponse {
+pub struct MatchObjectResponse {
     /// Used to identify individual matches, e.g. 3703866531
     #[serde(rename = "match_id", skip_serializing_if = "Option::is_none")]
     pub match_id: Option<i32>,
@@ -60,9 +60,9 @@ pub struct TeamsMatchesResponse {
     pub radiant: Option<bool>,
 }
 
-impl TeamsMatchesResponse {
-    pub fn new() -> TeamsMatchesResponse {
-        TeamsMatchesResponse {
+impl MatchObjectResponse {
+    pub fn new() -> MatchObjectResponse {
+        MatchObjectResponse {
             match_id: None,
             duration: None,
             start_time: None,

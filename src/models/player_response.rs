@@ -18,10 +18,10 @@ pub struct PlayerResponse {
     pub tracked_until: Option<String>,
     /// solo_competitive_rank
     #[serde(rename = "solo_competitive_rank", skip_serializing_if = "Option::is_none")]
-    pub solo_competitive_rank: Option<String>,
+    pub solo_competitive_rank: Option<i32>,
     /// competitive_rank
     #[serde(rename = "competitive_rank", skip_serializing_if = "Option::is_none")]
-    pub competitive_rank: Option<String>,
+    pub competitive_rank: Option<i32>,
     /// rank_tier
     #[serde(rename = "rank_tier", skip_serializing_if = "Option::is_none")]
     pub rank_tier: Option<f32>,

@@ -1,4 +1,4 @@
-# PlayerStatsResponse
+# PlayerTotalsResponse
 
 ## Properties
 

@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## teams_get
 
-> Vec<crate::models::TeamsResponse> teams_get()
+> Vec<crate::models::TeamObjectResponse> teams_get()
 GET /teams
 
 Get team data
@@ -25,7 +25,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::TeamsResponse>**](TeamsResponse.md)
+[**Vec<crate::models::TeamObjectResponse>**](TeamObjectResponse.md)
 
 ### Authorization
 
@@ -41,7 +41,7 @@ No authorization required
 
 ## teams_team_id_get
 
-> crate::models::TeamsIdResponse teams_team_id_get(team_id)
+> crate::models::TeamObjectResponse teams_team_id_get(team_id)
 GET /teams/{team_id}
 
 Get data for a team
@@ -55,7 +55,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TeamsIdResponse**](TeamsIdResponse.md)
+[**crate::models::TeamObjectResponse**](TeamObjectResponse.md)
 
 ### Authorization
 
@@ -101,7 +101,7 @@ No authorization required
 
 ## teams_team_id_matches_get
 
-> crate::models::TeamsMatchesResponse teams_team_id_matches_get(team_id)
+> crate::models::MatchObjectResponse teams_team_id_matches_get(team_id)
 GET /teams/{team_id}/matches
 
 Get matches for a team
@@ -115,7 +115,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TeamsMatchesResponse**](TeamsMatchesResponse.md)
+[**crate::models::MatchObjectResponse**](MatchObjectResponse.md)
 
 ### Authorization
 

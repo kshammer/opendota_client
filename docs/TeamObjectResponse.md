@@ -1,4 +1,4 @@
-# LeagueTeamsResponse
+# TeamObjectResponse
 
 ## Properties
 
